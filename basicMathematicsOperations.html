@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+        function basicOperation(operation, value1, value2)
+        {
+            if(operation=="+")
+            {
+                return(value1+value2);
+            }
+            else if(operation=="-")
+            {
+                return(value1-value2);
+            }
+            else if(operation=="*")
+            {
+                return(value1*value2);
+            }
+            else if(operation=="/")
+            {
+                return(value1/value2);
+            }
+        }
+        var firstIntValue=1;
+        var secondIntValue=2;
+        var thirdFloatValue=3.5;
+        var additionSymbol="+";
+        var subtractionSymbol="-";
+        var multiplicationSymbol="*";
+        var divisionSymbol="/";
+        console.log(basicOperation(additionSymbol,firstIntValue,secondIntValue));
+        console.log(basicOperation(subtractionSymbol,firstIntValue,secondIntValue));
+        console.log(basicOperation(multiplicationSymbol,firstIntValue,secondIntValue));
+        console.log(basicOperation(divisionSymbol,firstIntValue,secondIntValue));
+
+        console.log(basicOperation(additionSymbol,firstIntValue,thirdFloatValue));
+        console.log(basicOperation(subtractionSymbol,firstIntValue,thirdFloatValue));
+        console.log(basicOperation(multiplicationSymbol,firstIntValue,thirdFloatValue));
+        console.log(basicOperation(divisionSymbol,firstIntValue,thirdFloatValue));
+    </script>
+  </head>
+ <body></body>
+</html>
